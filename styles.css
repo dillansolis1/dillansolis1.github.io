@@ -1,0 +1,162 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif; /* Cambiar fuente a Roboto */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif; /* Fuente con más personalidad para los encabezados */
+    font-weight: 600;
+    color: #000000; /* Color oscuro para los encabezados */
+    margin-bottom: 15px;
+}
+
+/* Menú lateral */
+.menu {
+    width: 250px;
+    height: 100vh;
+    background-color: #002D72;
+    position: fixed;
+    top: 0;
+    left: -250px;  /* Inicialmente el menú está oculto */
+    padding-top: 20px;
+    transition: left 0.3s ease; /* Transición para mover el menú */
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.menu ul li a:hover {
+    background-color: #1a437a;
+}
+
+/* Contenido principal */
+.content {
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
+    transition: margin-left 0.3s ease;
+}
+
+/* Encabezado */
+header {
+    background-color: #002D72;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem; /* Tamaño mayor para el título */
+    font-weight: 700;
+    letter-spacing: 2px; /* Un poco de espacio entre las letras para mayor legibilidad */
+}
+
+/* Sección de entrenamiento */
+.training-day h2 {
+    font-size: 1.6rem;
+    color: #002D72;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.training-day p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #002D72;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #FFC107;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Canvas (Gráficos) */
+canvas {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Estilo del menú hamburguesa */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle .dot {
+    width: 30px;
+    height: 5px;
+    background-color: #2196F3; /* Azul para el ícono */
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-toggle .dot:hover {
+    background-color: #0D47A1; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+    .menu {
+        left: -250px;  /* Menú oculto por defecto */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar el botón de 3 puntos en móviles */
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    /* Ajustamos el tamaño del menú y contenido en móvil */
+    .menu {
+        width: 200px; /* Menú más pequeño en móvil */
+    }
+    
+    /* Cambiar el tamaño de las fuentes para hacerlo más compacto */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
+}
