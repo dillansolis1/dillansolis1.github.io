@@ -1,12 +1,13 @@
 /* Estilos para la imagen del logo */
 .logo-bottom-right {
-    width: 100px; /* Ajusta el tamaño de la imagen */
+    width: 60px; /* Reducido el tamaño de la imagen */
     height: auto;
     position: absolute;
     bottom: 20px; /* Asegura que no quede pegada al borde inferior */
     right: 20px; /* Ajusta la posición de la imagen */
     display: block;
-    max-width: 80px; /* Limita el tamaño máximo de la imagen */
+    max-width: 60px; /* Limita el tamaño máximo de la imagen */
+    z-index: 1100; /* Asegura que el logo quede sobre el contenido */
 }
 
 /* General */
@@ -34,6 +35,7 @@ h1, h2 {
     font-weight: 600;
     color: #f5c518;
     margin-bottom: 15px;
+    z-index: 100; /* Asegura que el título se mantenga por encima del contenido */
 }
 
 @media (prefers-color-scheme: light) {
@@ -52,6 +54,7 @@ h1, h2 {
     left: -250px;
     padding-top: 20px;
     transition: left 0.3s ease;
+    z-index: 1000; /* Asegura que el menú se muestre por encima de otros elementos */
 }
 
 .menu ul {
@@ -81,6 +84,7 @@ h1, h2 {
     padding: 20px;
     width: 100%;
     transition: margin-left 0.3s ease;
+    z-index: 999; /* Asegura que el contenido no quede por debajo del menú */
 }
 
 /* Encabezado */
@@ -93,6 +97,7 @@ header {
     font-weight: 700;
     letter-spacing: 2px;
     position: relative;
+    z-index: 100; /* Asegura que el encabezado esté encima de otros elementos */
 }
 
 /* Footer */
