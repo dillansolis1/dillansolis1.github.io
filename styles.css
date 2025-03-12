@@ -1,3 +1,13 @@
+/* Estilos para la imagen del logo */
+.logo-bottom-right {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    position: absolute;
+    bottom: 10px; /* Coloca la imagen en la parte inferior */
+    right: 20px; /* Mueve la imagen al lado derecho */
+    display: block;
+}
+
 /* General */
 body {
     font-family: 'Roboto', sans-serif;
@@ -81,6 +91,7 @@ header {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 2px;
+    position: relative;
 }
 
 /* Footer */
