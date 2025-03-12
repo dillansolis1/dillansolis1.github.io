@@ -6,6 +6,7 @@
     bottom: 10px; /* Coloca la imagen en la parte inferior */
     right: 20px; /* Mueve la imagen al lado derecho */
     display: block;
+    max-width: 80px; /* Limita el tamaño máximo de la imagen */
 }
 
 /* General */
@@ -166,6 +167,14 @@ canvas {
 
     footer p {
         font-size: 0.875rem;
+    }
+
+    /* Ajuste para la imagen en dispositivos pequeños */
+    .logo-bottom-right {
+        width: 60px; /* Ajusta aún más el tamaño de la imagen en pantallas pequeñas */
+        max-width: 60px; /* Limita el tamaño máximo de la imagen */
+        bottom: 5px; /* Ajusta la posición */
+        right: 15px; /* Ajusta la posición */
     }
 }
 
